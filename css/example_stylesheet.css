@@ -1,10 +1,17 @@
-
-
 :root
 {
   --bgtheme1 : #00FF0F;
   --bgtheme2 : #C12F7A;
+  --nvbr_color: #1111;
+  --nvbr-hglght: #2222;
+  --bgcolor: #009688;  /**Teal Color, same used in W3 stylesheet*/
+}
 
+body
+{
+    background-color: var(--bgcolor);
+    color: white;
+    margin: 0px;
 }
 
 
@@ -27,44 +34,67 @@ p.subtitle
 {
   background : radial-gradient(circle, var(--bgtheme2) , yellow, var(--bgtheme1) ) !important;
   color : white !important;
-  border-radius : 0px;
-  margin-bottom : 0;
+  border-radius : 50px;
+  margin: 25px;
+  margin-top: 50px;
+  top:10px;
 }
 
+a
+{
+  color: var(--bgcolor);
+}
+/**
+
+  current objects on navbar...
+  Find out how to change the color of the link text to
+  teal;
+
+
+*/
 ul.nav_bar
 {
-
   list-style-type : none;
-  margin : 0;
-  padding: 0;
+  border-radius: 50px;
+  margin : 0px !important;
+  padding: 10px;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
   overflow : hidden;
+  color: red;
   background-color : #333;
-
 }
 
 li.nav_bar
 {
   float : left;
-  border-right : 1px solid #bbb;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 li.nav_bar:last-child
 {
   border-right : none;
-  border-left : 1px solid #bbb;
   float: right;
 }
 
 li a.nav_bar
 {
+
   display : block;
-  color : white;
   text-align : center;
   padding : 14px 16px;
   text-decoration : none;
 }
 
-li a.nav_bar:hover
+
+li a:hover
 {
-  background-color : #111;
+  text-decoration: none;
+  background-color: green;
+  color: var(--bgcolor);
+  overflow: scroll;
+  padding:  14px 16px;
 }
