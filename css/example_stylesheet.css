@@ -5,6 +5,7 @@
   --nvbr_color: #1111;
   --nvbr-hglght: #2222;
   --bgcolor: #009688;  /**Teal Color, same used in W3 stylesheet*/
+  --pad:15px; /** If i want to make a universal padding value   */
 }
 
 body
@@ -32,7 +33,16 @@ p.subtitle
 
 .jumbotron
 {
-  background : radial-gradient(circle, var(--bgtheme2) , yellow, var(--bgtheme1) ) !important;
+  /**
+                  -Self made sun made with gradiants
+
+  background : radial-gradient(circle, var(--bgtheme2) , yellow, black) !important;
+  */
+
+  background-image: url("../images/leaves.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color : white !important;
   border-radius : 50px;
   margin: 25px;
